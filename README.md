@@ -20,6 +20,9 @@ games/index.html           ゲーム一覧
 games/sample-game.html     作品詳細サンプル
 game-editor/index.html     Game Editor
 about/index.html           About
+news/index.html            News・更新履歴
+development-log/index.html 制作ログ
+r18/games/*/index.html     R18作品詳細ページ
 assets/site-data.js        共通設定・お知らせ・作品データ
 assets/app.js              共通ヘッダー等の描画
 assets/style.css           サイト全体のデザイン
