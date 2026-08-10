@@ -3,7 +3,7 @@
   const confirmButton = document.querySelector("[data-age-confirm]");
   const leaveButton = document.querySelector("[data-age-leave]");
   if (document.body.hasAttribute("data-r18-protected") && sessionStorage.getItem(key) !== "yes") {
-    location.replace("../index.html");
+    location.replace(document.body.dataset.r18Gate || "../index.html");
     return;
   }
   if (confirmButton) confirmButton.addEventListener("click", function () {
