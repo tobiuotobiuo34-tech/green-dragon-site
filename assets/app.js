@@ -1,3 +1,4 @@
+
 (function () {
   const data = window.SITE_DATA;
   const depth = Number(document.body.dataset.depth || 0);
@@ -7,6 +8,7 @@
     ["home", "Home", root + "index.html"],
     ["games", "Games", root + "games/index.html"],
     ["editor", "Game Editor", root + "game-editor/index.html"],
+    ["tools", "Tools", root + "tools/index.html"],
     ["about", "About / Circle", root + "about/index.html"],
     ["about", "Member", root + "about/index.html#member"]
   ];
@@ -15,7 +17,7 @@
   const footer = document.querySelector("[data-site-footer]");
   if (footer) footer.innerHTML = `<footer class="site-footer"><div class="wrap footer-main"><div><a class="brand inverse" href="${root}index.html"><img src="${root}assets/images/green-dragon-logo-transparent.png" alt=""><span>${data.siteName}<small>HUMAN × AI AGENT</small></span></a><p>Learn through play. Take to the sky.</p></div><div class="footer-links"><div><h2>Explore</h2><a href="${root}games/index.html">Games</a><a href="${root}game-editor/index.html">Game Editor</a><a href="${root}about/index.html">About / Circle</a><a href="${root}about/index.html#member">Member</a><a class="r18-link" href="${root}r18/index.html">R18 Entrance</a></div><div><h2>External</h2><a data-external="x" href="#">X ↗</a><a data-external="youtube" href="#">YouTube ↗</a><a data-external="pixiv" href="#">pixiv ↗</a><a data-external="fanza" href="#">FANZA ↗</a><a data-external="dlsite" href="#">DLsite ↗</a></div><div class="footer-contact"><h2>Contact</h2><p>仕事・制作のご相談</p><a href="mailto:${data.contactEmail}">${data.contactEmail}</a></div></div></div><div class="wrap footer-bottom"><small>© 2026 ${data.creatorName}. All rights reserved.</small><small>ALL AGES TOP</small></div></footer>`;
   const footerExplore = footer && footer.querySelector(".footer-links > div:first-child");
-  if (footerExplore) footerExplore.insertAdjacentHTML("beforeend", `<a href="${root}news/index.html">News</a><a href="${root}development-log/index.html">Development Log</a>`);
+  if (footerExplore) footerExplore.insertAdjacentHTML("beforeend", `<a href="${root}tools/index.html">Tools</a><a href="${root}news/index.html">News</a><a href="${root}development-log/index.html">Development Log</a>`);
   document.querySelectorAll("[data-external]").forEach(a => { const url=data.externalLinks[a.dataset.external]; a.href=url; a.target="_blank"; a.rel="noopener noreferrer"; });
   const button = document.querySelector(".menu-button");
   if (button) button.addEventListener("click", () => { const open=button.getAttribute("aria-expanded")==="true"; button.setAttribute("aria-expanded", String(!open)); document.querySelector("#site-nav").classList.toggle("open", !open); });
