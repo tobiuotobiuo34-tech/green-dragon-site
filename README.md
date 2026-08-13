@@ -1,3 +1,4 @@
+
 # GreeN DoRaGoN 公式サイト Ver.0.1
 
 個人クリエイターの活動をまとめる公式ホームページです。GitHub Pagesで無料公開できる、HTML・CSS・JavaScriptだけの静的サイトです。サーバー、データベース、ビルド作業は必要ありません。
@@ -19,6 +20,7 @@ index.html                 TOP
 games/index.html           ゲーム一覧
 games/sample-game.html     作品詳細サンプル
 game-editor/index.html     Game Editor
+tools/index.html           その他の開発中ツール
 about/index.html           About
 news/index.html            News・更新履歴
 development-log/index.html 制作ログ
