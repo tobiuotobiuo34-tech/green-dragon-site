@@ -1,3 +1,4 @@
+
 /* サイト名・外部リンク・作品・お知らせの共通設定 */
 window.SITE_DATA = {
   siteName: "GreeN DoRaGoN",
@@ -11,6 +12,7 @@ window.SITE_DATA = {
     pixiv: "https://www.pixiv.net/"
   },
   news: [
+    { date: "2026.08.14", category: "TOOLS", title: "開発中ツール紹介ページを追加しました", href: "tools/index.html" },
     { date: "2026.08.10", category: "CIRCLE", title: "GreeN DoRaGoN 公式サイトを公開しました", href: "about/index.html" },
     { date: "2026.08.10", category: "EDITOR", title: "自作ゲーム制作エディタを開発中です", href: "game-editor/index.html" }
   ],
